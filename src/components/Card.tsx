@@ -10,7 +10,7 @@ type CardProps = {
 function Card({ cityInfo }: CardProps) {
   const { city, country, visited = false, imageUrl } = cityInfo;
   return (
-    <div>
+    <div className="cards">
       <p>{city}</p>
       <p>{country}</p>
       <img src={ imageUrl } alt={ city } />
